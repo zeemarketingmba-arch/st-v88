@@ -1,13 +1,19 @@
-/* Minimal base styles for the app. Edit as needed. */
-html, body, #root {
-  height: 100%;
-}
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #fff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: #fff; }
+  body { font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
 }
 
-/* Utility placeholder to ensure print styling loads during build */
-.printable-area { background: white; }
+/* custom print helpers */
+@media print {
+  .no-print { display: none !important; }
+  body, .printable-area { margin: 0; padding: 0; background-color: white !important; color: black !important; }
+  .printable-area { box-shadow: none !important; border: none !important; }
+  .print-header { display: flex !important; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 2px solid #ccc; margin-bottom: 1rem; }
+}
+.print-header { display: none; }
+
