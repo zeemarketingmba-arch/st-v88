@@ -1,0 +1,13 @@
+/* Minimal base styles for the app. Edit as needed. */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+/* Utility placeholder to ensure print styling loads during build */
+.printable-area { background: white; }

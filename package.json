@@ -1,0 +1,40 @@
+{
+  "name": "student-evaluation-system",
+  "private": true,
+  "version": "0.0.0",
+  "description": "نظام تقييم الطلاب — واجهة ويب لتسجيل استمارات تقييم الطلاب مع دعم التصدير والتخصيص.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "echo \"No checks configured. Add lint/tests as needed.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/student-evaluation-system.git"
+  },
+  "keywords": [
+    "education",
+    "evaluation",
+    "react",
+    "vite",
+    "students"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "react-dom": "^19.2.0",
+    "react": "^19.2.0",
+    "@google/genai": "^1.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
